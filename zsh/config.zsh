@@ -42,17 +42,17 @@ zstyle ':completion:*:descriptions' format '%F{green}-- %d --%f'
 bindkey -e
 bindkey '^R' fzf-history-widget
 
-eval "$(starship init zsh)"
 
 [ -f /usr/share/fzf/shell/key-bindings.zsh ] && source /usr/share/fzf/shell/key-bindings.zsh
 [ -f /usr/share/fzf/shell/completion.zsh ] && source /usr/share/fzf/shell/completion.zsh
 
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=#565f89'
+
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
 export STARSHIP_CONFIG=~/.dotfiles/zsh/starship/config.toml
+
+eval "$(starship init zsh)"
 # ---------- TMUX AUTO ----------
 if command -v tmux >/dev/null 2>&1 \
    && [ -z "$TMUX" ] \
@@ -62,23 +62,3 @@ if command -v tmux >/dev/null 2>&1 \
 fi
 
 
-export BUN_INSTALL="$HOME/.bun"
-export PATH="/home/osman/.bun/bin:$PATH"
-
-export PATH="$HOME/.cargo/bin:$PATH"
-
-
-# opencode
-export PATH=/home/osman/.opencode/bin:$PATH
-
-# Rust
-# >>> Codex installer >>>
-export PATH="/home/osman/.local/bin:$PATH"
-# <<< Codex installer <<<
-
-# Vite+ bin (https://viteplus.dev)
-. "/home/osman/.config/vite-plus/env"
-
-
-# Added by LM Studio CLI tool (lms)
-export PATH="$PATH:/home/osman/.lmstudio/bin"

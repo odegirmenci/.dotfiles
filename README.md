@@ -1,12 +1,30 @@
-## Neovim
-ln -s ~/dotfiles/nvim ~/.config/nvim
+# `Prerequisite`
+    sudo pacman -S --needed \
+        neovim \
+        alacritty \
+        tmux \
+        zsh \
+        starship \
+        ttf-jetbrains-mono-nerd \
+        zsh-autosuggestions \
+        zsh-syntax-highlighting \
+        zsh-completions \
+        git \
+        curl \
+        unzip \
+        fzf \
+        ripgrep \
+        fd
 
-## ~/.config/alacritty/alacritty.toml  
-[general]
-import = [ "~/.dotfiles/alacritty/general.toml" ]
+#### Neovim
+    ln -s ~/.dotfiles/nvim ~/.config/nvim
 
-## ~/.tmux.conf
-source-file ~/.dotfiles/tmux/config.conf
+#### ~/.config/alacritty/alacritty.toml  
+    [general]
+    import = [ "~/.dotfiles/alacritty/general.toml" ]
 
-## ~/.zshrc
-source ~/.dotfiles/zsh/config.zsh
+#### ~/.tmux.conf
+    source-file ~/.dotfiles/tmux/config.conf
+
+#### ~/.zshrc
+    source ~/.dotfiles/zsh/config.zsh
