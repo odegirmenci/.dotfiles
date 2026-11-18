@@ -1,6 +1,7 @@
 # `Prerequisite`
     sudo pacman -S --needed \
         neovim \
+        tree-sitter-cli \
         alacritty \
         tmux \
         zsh \
