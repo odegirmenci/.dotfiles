@@ -1,12 +1,12 @@
-# Neovim
+## Neovim
 ln -s ~/dotfiles/nvim ~/.config/nvim
 
-# ~/.config/alacritty/alacritty.toml  
+## ~/.config/alacritty/alacritty.toml  
 [general]
 import = [ "~/.dotfiles/alacritty/general.toml" ]
 
-# ~/.tmux.conf
+## ~/.tmux.conf
 source-file ~/.dotfiles/tmux/config.conf
 
-# ~/.zshrc
+## ~/.zshrc
 source ~/.dotfiles/zsh/config.zsh
